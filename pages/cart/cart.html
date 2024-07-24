@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Amazart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../CSS/reset.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/scrollbar.css" />
+    <link rel="stylesheet" href="../../CSS/variables.css" />
+    <link rel="stylesheet" href="../../CSS/utilities.css" />
+    <link rel="stylesheet" href="../../pages/cart/cart.css" />
+    <link rel="stylesheet" href="../../CSS/footer.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="../landing-page/landing-page.html" class="nav-title"
+            >Amazart</a
+          >
+        </div>
+        <div class="nav-search">
+          <button class="search-icon"><i class="fas fa-search"></i></button>
+          <input
+            type="search"
+            class="nav-search"
+            placeholder="search items here"
+          />
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../wishlist/wishlist.html" class="nav-link"
+              ><i class="fas fa-heart"></i>
+              <div class="numeric-badge danger-bg">20</div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../cart/cart.html" class="nav-link"
+              ><i class="fas fa-shopping-cart"></i>
+              <div class="numeric-badge danger-bg">20</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa-bell"></i>
+              <div class="numeric-badge danger-bg">20</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="../../pages/authentication/login.html"
+              class="btn btn-primary"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main-section">
+      <!-- CART PRODUCTS -->
+      <section class="cart-products">
+        <h2 class="cart-title">
+          My Cart <small class="cart-total-items">(4 Items)</small>
+        </h2>
+
+        <section class="cart-container">
+          <section class="cart-items">
+            <div class="horizontal-card">
+              <div class="horizontal-card-img">
+                <img src="../../images/product-1.jpg" alt="product-1-img" />
+              </div>
+              <div class="horizontal-card-content">
+                <div class="horizontal-card-text">
+                  <h2 class="horizontal-card-title">Red T-Shirt</h2>
+                  <label for="quantity-1" class="quantity-label"
+                    >Quantity</label
+                  >
+                  <input
+                    type="number"
+                    id="quantity-1"
+                    class="quantity"
+                    value="1"
+                  />
+                  <p class="size">Size: <strong>XL</strong></p>
+                  <div class="card-rating">
+                    <ul class="stars">
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class="card-price">
+                    ₹499 <small class="price-before">₹1299</small
+                    ><small class="price-discount">62%OFF</small>
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button class="cart-btn btn-outline-primary">
+                    Move to Wishlist
+                  </button>
+                  <button class="cart-btn btn-outline-danger">Remove</button>
+                </div>
+              </div>
+            </div>
+            <div class="horizontal-card">
+              <div class="horizontal-card-img">
+                <img src="../../images/product-1.jpg" alt="product-1-img" />
+              </div>
+              <div class="horizontal-card-content">
+                <div class="horizontal-card-text">
+                  <h2 class="horizontal-card-title">Red T-Shirt</h2>
+                  <label for="quantity-2" class="quantity-label"
+                    >Quantity</label
+                  >
+                  <input
+                    type="number"
+                    id="quantity-2"
+                    class="quantity"
+                    value="1"
+                  />
+                  <p class="size">Size: <strong>XL</strong></p>
+                  <div class="card-rating">
+                    <ul class="stars">
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class="card-price">
+                    ₹499 <small class="price-before">₹1299</small
+                    ><small class="price-discount">62%OFF</small>
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button class="cart-btn btn-outline-primary">
+                    Move to Wishlist
+                  </button>
+                  <button class="cart-btn btn-outline-danger">Remove</button>
+                </div>
+              </div>
+            </div>
+            <div class="horizontal-card">
+              <div class="horizontal-card-img">
+                <img src="../../images/product-1.jpg" alt="product-1-img" />
+              </div>
+              <div class="horizontal-card-content">
+                <div class="horizontal-card-text">
+                  <h2 class="horizontal-card-title">Red T-Shirt</h2>
+                  <label for="quantity-3" class="quantity-label"
+                    >Quantity</label
+                  >
+                  <input
+                    type="number"
+                    id="quantity-3"
+                    class="quantity"
+                    value="1"
+                  />
+                  <p class="size">Size: <strong>XL</strong></p>
+                  <div class="card-rating">
+                    <ul class="stars">
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class="card-price">
+                    ₹499 <small class="price-before">₹1299</small
+                    ><small class="price-discount">62%OFF</small>
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button class="cart-btn btn-outline-primary">
+                    Move to Wishlist
+                  </button>
+                  <button class="cart-btn btn-outline-danger">Remove</button>
+                </div>
+              </div>
+            </div>
+            <div class="horizontal-card">
+              <div class="horizontal-card-img">
+                <img src="../../images/product-1.jpg" alt="product-1-img" />
+              </div>
+              <div class="horizontal-card-content">
+                <div class="horizontal-card-text">
+                  <h2 class="horizontal-card-title">Red T-Shirt</h2>
+                  <label for="quantity-4" class="quantity-label"
+                    >Quantity</label
+                  >
+                  <input
+                    type="number"
+                    id="quantity-4"
+                    class="quantity"
+                    value="1"
+                  />
+                  <p class="size">Size: <strong>XL</strong></p>
+                  <div class="card-rating">
+                    <ul class="stars">
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star star-filled">
+                        <i class="fas fa-star"></i>
+                      </li>
+                      <li class="star"><i class="fas fa-star"></i></li>
+                    </ul>
+                  </div>
+                  <p class="card-price">
+                    ₹499 <small class="price-before">₹1299</small
+                    ><small class="price-discount">62%OFF</small>
+                  </p>
+                </div>
+                <div class="card-action">
+                  <button class="cart-btn btn-outline-primary">
+                    Move to Wishlist
+                  </button>
+                  <button class="cart-btn btn-outline-danger">Remove</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="cart-price-container">
+            <h2 class="price-heading">Price Total</h2>
+            <div class="price-details">
+              <div>
+                <span class="price-item">Price <span>(4 items)</span></span>
+                <span class="price-item">Discount</span>
+                <span class="price-item">Delivery Charges</span>
+                <span class="price-item coupon">Apply Coupon</span>
+                <span class="price-item total">Total Amount</span>
+              </div>
+              <div class="prices">
+                <span class="price-item">₹1800</span>
+                <span class="price-item">-₹400</span>
+                <span class="price-item">₹50</span>
+                <span class="price-item coupon"
+                  ><input type="text" id="" class="coupon-input"
+                /></span>
+                <span class="price-item total">₹1250</span>
+              </div>
+            </div>
+            <button class="cart-btn cart-btn-order">Place Order</button>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Amazart - an all in one store for all your needs</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li class="footer-item">
+            <a class="footer-link" href="../landing-page/landing-page.html"
+              >Home</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="../all-products/all-products.html"
+              >Products</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li class="footer-item">
+            <a class="footer-link" href="../cart/cart.html">My Cart</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="../wishlist/wishlist.html"
+              >My Wishlist</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

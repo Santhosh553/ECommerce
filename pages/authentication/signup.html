@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | Amazart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../CSS/reset.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/scrollbar.css" />
+    <link rel="stylesheet" href="../../CSS/variables.css" />
+    <link rel="stylesheet" href="../../CSS/utilities.css" />
+    <link rel="stylesheet" href="../../pages/authentication/auth.css" />
+    <link rel="stylesheet" href="../../CSS/footer.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="../landing-page/landing-page.html" class="nav-title"
+            >Amazart</a
+          >
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="./login.html" class="btn btn-primary">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main-section">
+      <section class="section-img">
+        <img src="../../images/image1.png" alt="section-img" />
+      </section>
+      <section class="section-form">
+        <form action="">
+          <h1 class="form-title">Sign Up</h1>
+          <div class="form-group">
+            <input type="text" placeholder="First Name" />
+            <span class="err-msg">Error</span>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Last Name" />
+            <span class="err-msg">Error</span>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email Address" />
+            <span class="err-msg">Error</span>
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" />
+            <i class="fas fa-eye"></i>
+            <span class="err-msg">Error</span>
+          </div>
+          <div class="form-group checkbox-group-signup">
+            <input type="checkbox" id="news-letter" />
+            <label for="news-letter">
+              Sign up for emails to get updates from Amazart.
+            </label>
+          </div>
+          <div class="form-group">
+            <span class="terms"
+              >By creating an account you agree to our
+              <a href="#" class="form-link">Privacy Policy</a> and
+              <a href="#" class="form-link">Terms of Use</a></span
+            >
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <p class="login-text">
+              Already Have an Account?
+              <a href="./login.html" class="form-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer footer-auth">
+      <div class="footer-text">
+        <p>Amazart - an all in one store for all your needs</p>
+      </div>
+
+      <ul class="footer-nav">
+        <li class="footer-item">
+          <a class="footer-link" href="../landing-page/landing-page.html"
+            >Home</a
+          >
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="../all-products/all-products.html"
+            >Products</a
+          >
+        </li>
+        <li class="footer-item">
+          <a class="footer-link" href="#">About</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

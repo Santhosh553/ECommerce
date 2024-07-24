@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Products | Amazart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../CSS/reset.css" />
+    <link rel="stylesheet" href="../../CSS/navbar.css" />
+    <link rel="stylesheet" href="../../CSS/scrollbar.css" />
+    <link rel="stylesheet" href="../../CSS/variables.css" />
+    <link rel="stylesheet" href="../../CSS/utilities.css" />
+    <link rel="stylesheet" href="../../pages/all-products/all-products.css" />
+    <link rel="stylesheet" href="../../CSS/footer.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-brand">
+          <a href="../landing-page/landing-page.html" class="nav-title"
+            >Amazart</a
+          >
+        </div>
+        <div class="nav-search">
+          <button class="search-icon"><i class="fas fa-search"></i></button>
+          <input
+            type="search"
+            class="nav-search"
+            placeholder="search items here"
+          />
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="../wishlist/wishlist.html" class="nav-link"
+              ><i class="fas fa-heart"></i>
+              <div class="numeric-badge danger-bg">20</div>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../cart/cart.html" class="nav-link"
+              ><i class="fas fa-shopping-cart"></i>
+              <div class="numeric-badge danger-bg">20</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fas fa-bell"></i>
+              <div class="numeric-badge danger-bg">20</div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="../../pages/authentication/login.html"
+              class="btn btn-primary"
+              >Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main-section">
+      <!-- ASIDE -->
+      <aside class="aside">
+        <div class="aside-heading">
+          <h2 class="aside-title">Filters</h2>
+          <a href="#" class="aside-clear">Clear</a>
+        </div>
+        <div class="filter-container">
+          <h3 class="filter-title price">Price</h3>
+          <div class="range">
+            <div class="sliderValue">
+              <span class="slider-points">100</span>
+            </div>
+            <div class="field">
+              <div class="value left">₹100</div>
+              <input type="range" min="100" max="2000" value="100" steps="1" />
+              <div class="value right">₹2000</div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-container">
+          <h3 class="filter-title">Sort By</h3>
+          <div class="filter-type">
+            <input type="radio" id="ltoh" name="sort" />
+            <label for="ltoh">Low to High</label>
+          </div>
+          <div class="filter-type">
+            <input type="radio" id="htol" name="sort" />
+            <label for="htol">High to Low</label>
+          </div>
+          <div class="filter-type">
+            <input type="radio" id="ntool" name="sort" />
+            <label for="ntool">New to Old</label>
+          </div>
+          <div class="filter-type">
+            <input type="radio" id="olton" name="sort" />
+            <label for="olton">Old to New</label>
+          </div>
+        </div>
+        <div class="filter-container">
+          <h3 class="filter-title">Category</h3>
+          <div class="filter-type">
+            <input type="checkbox" id="tshirts" />
+            <label for="tshirts">T-Shirts</label>
+          </div>
+          <div class="filter-type">
+            <input type="checkbox" id="denims" />
+            <label for="denims">Denims</label>
+          </div>
+          <div class="filter-type">
+            <input type="checkbox" id="tracks" />
+            <label for="tracks">Tracks</label>
+          </div>
+          <div class="filter-type">
+            <input type="checkbox" id="watches" />
+            <label for="watches">Watches</label>
+          </div>
+          <div class="filter-type">
+            <input type="checkbox" id="sneakers" />
+            <label for="sneakers">Sneakers</label>
+          </div>
+        </div>
+        <div class="filter-container">
+          <h3 class="filter-title">Rating</h3>
+          <div class="filter-type">
+            <input type="radio" name="rating" id="4above" />
+            <label for="4above">4 stars & above</label>
+          </div>
+          <div class="filter-type">
+            <input type="radio" name="rating" id="3above" />
+            <label for="3above">3 stars & above</label>
+          </div>
+          <div class="filter-type">
+            <input type="radio" name="rating" id="2above" />
+            <label for="2above">2 stars & above</label>
+          </div>
+          <div class="filter-type">
+            <input type="radio" name="rating" id="1above" />
+            <label for="1above">1 stars & above</label>
+          </div>
+        </div>
+      </aside>
+      <!-- All PRODUCTS -->
+      <section class="all-products">
+        <div class="nav-search">
+          <button class="search-icon"><i class="fas fa-search"></i></button>
+          <input
+            type="search"
+            class="nav-search"
+            placeholder="search items here"
+          />
+        </div>
+        <h2 class="section-title">All Products</h2>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-1.jpg" alt="product-1.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Red T-Shirt</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-2.jpg" alt="product-2.img" />
+            </div>
+            <div class="card-icon">
+              <svg
+                class="wishlist"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Black Shoes</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-3.jpg" alt="product-3.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Gray Track</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="overlay">
+              <a href="#" class="overlay-link">Out Of Stock</a>
+            </div>
+            <div class="card-img">
+              <img src="../../images/product-4.jpg" alt="product-4.img" />
+            </div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Blue T-Shirt</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-5.jpg" alt="product-5.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                class="wishlist"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">White Shoes</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-6.jpg" alt="product-6.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Black T-Shirt</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button>Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-7.jpg" alt="product-7.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                class="wishlist"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Pair of Socks</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹399 <small class="price-before">₹799</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-8.jpg" alt="product-8.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Black Watch</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-9.jpg" alt="product-9.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Black & Yellow Watch</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-10.jpg" alt="product-10.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Black Sports Shoes</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-11.jpg" alt="product-11.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">White Loafers</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img src="../../images/product-12.jpg" alt="product-12.img" />
+            </div>
+            <div class="card-badge">New</div>
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--bi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+              >
+                <g>
+                  <path
+                    d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385c.92 1.815 2.834 3.989 6.286 6.357c3.452-2.368 5.365-4.542 6.286-6.357c.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="card-head">
+              <h4 class="card-title">Black Track</h4>
+            </div>
+            <div class="card-body">
+              <div class="card-rating">
+                <ul class="stars">
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star star-filled"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                  <li class="star"><i class="fas fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="card-text">
+                <p class="card-price">
+                  ₹499 <small class="price-before">₹1299</small
+                  ><small class="price-discount">62%OFF</small>
+                </p>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <section class="page-btns">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>&#8594;</span>
+        </section>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Amazart - an all in one store for all your needs</p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li class="footer-item">
+            <a class="footer-link" href="../landing-page/landing-page.html"
+              >Home</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="../all-products/all-products.html"
+              >Products</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li class="footer-item">
+            <a class="footer-link" href="../cart/cart.html">My Cart</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="../wishlist/wishlist.html"
+              >My Wishlist</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Settings</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- SLIDER SCRIPT -->
+    <script src="../../js/slider.js"></script>
+  </body>
+</html>

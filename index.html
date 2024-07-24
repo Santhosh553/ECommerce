@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazart - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/variables.css" />
+    <link rel="stylesheet" href="./CSS/utilities.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .screen-container {
+        text-align: center;
+        background: #fff;
+        padding: 2rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-width: 600px;
+        width: 100%;
+      }
+      h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-bottom: 2rem;
+      }
+      .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+      .btn-screen {
+        display: inline-block;
+        margin: 0.5rem;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .btn-screen:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+      }
+      .btn-screen i {
+        margin-right: 0.5rem;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .btn-screen {
+          font-size: 0.875rem;
+          padding: 0.75rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="screen-container">
+      <h1>Welcome to Amazart</h1>
+      <div class="buttons-container">
+        <a class="btn btn-primary btn-screen" href="./pages/authentication/login.html">
+          <i class="fas fa-sign-in-alt"></i> Login
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/authentication/signup.html">
+          <i class="fas fa-user-plus"></i> Sign Up
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/landing-page/landing-page.html">
+          <i class="fas fa-home"></i> Landing Page
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/all-products/all-products.html">
+          <i class="fas fa-th-list"></i> All Products
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/product-details/product-details.html">
+          <i class="fas fa-info-circle"></i> Product Details
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/cart/cart.html">
+          <i class="fas fa-shopping-cart"></i> Cart
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/wishlist/wishlist.html">
+          <i class="fas fa-heart"></i> Wishlist
+        </a>
+        <a class="btn btn-primary btn-screen" href="./pages/authentication/logout.html">
+          <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
